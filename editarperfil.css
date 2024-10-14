@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+header {
+    background-color: #111;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    margin-left: 20px;
+}
+
+.editar-perfil {
+    background-color: #111;
+    padding: 50px;
+    text-align: center;
+}
+
+.editar-perfil h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.editar-perfil form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.editar-perfil label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.editar-perfil input[type="text"],
+.editar-perfil input[type="email"],
+.editar-perfil input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+.editar-perfil button {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+header .titulo {
+    text-align: center;
+    flex-grow: 1;
+}
+
+header .titulo h1 {
+    font-size: 28px;
+    color: #fff;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.editar-perfil input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+    ::placeholder {
+    color: #999; 
+}
+
+.editar-perfil textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right{
+    text-align: center;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: pink;
+}

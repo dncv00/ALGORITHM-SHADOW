@@ -1,0 +1,193 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #111;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 30px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.3s;
+    padding-right: 10px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #666;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav li.active a::after {
+    background-color: #fff; 
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: pink;
+}
+
+.right {
+    justify-content: center;
+}
+
+.contenido {
+    opacity: 0; 
+    animation: fadeInUp 2s ease 1s forwards; 
+}
+
+.descripcion-tema {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid azure;
+    border-radius: 10px;
+    background-color: #111;
+    width: 1163px;
+    margin-left: 150px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.parrafo {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comentarios {
+    margin-left: 150px;
+    width: 1250px;
+}
+
+.publicar-comentario {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 550px;
+    font-size: 15px;
+}
+
+.publicar-comentario:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+p {
+    font-size: 16px;
+}
+
+h2 {
+    text-align: left;
+}
+
+.comentarios-lista {
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    color: #fff;
+    margin-right: 37px;
+}
+
+/* Estilos para los comentarios individuales */
+.comentario {
+    background-color: #222; /* Fondo de los comentarios */
+    border: 1px solid #444; /* Borde del comentario */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado entre comentarios */
+    transition: background-color 0.3s; /* Transición suave para hover */
+}
+
+.comentario:hover {
+    background-color: #333; /* Color de fondo al pasar el cursor */
+}

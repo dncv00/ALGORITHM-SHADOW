@@ -1,0 +1,124 @@
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.logo img {
+  max-width: 80px;
+}
+
+/* Estilos para la sección de contenido */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de acordeón */
+.accordion-item {
+  border-bottom: 1px solid #444;
+  margin-bottom: 10px;
+}
+
+.accordion-item input[type="checkbox"] {
+  display: none;
+}
+
+.accordion-item label {
+  display: block;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #333;
+  color: #ccc;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-item label:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.accordion-item .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background-color: #2a2a2a;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: #ddd;
+  font-size: 20px;
+}
+
+.accordion-item input[type="checkbox"]:checked ~ .content {
+  max-height: 300px;
+  padding: 15px;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.redes-sociales {
+  margin-bottom: 15px;
+}
+
+.redes-sociales a {
+  color: #ccc;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: #fff;
+}
+
+.right {
+  font-size: 0.9em;
+  margin-top: 15px;
+  color: #888;
+}

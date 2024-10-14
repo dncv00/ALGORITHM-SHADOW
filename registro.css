@@ -1,0 +1,209 @@
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh;
+    background-image: url(img/png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.loginForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(49, 49, 49);
+    width: 350px;
+    height: 450px;
+    background-color: rgba(251, 247, 247, 0.388); 
+    backdrop-filter: blur(20px); 
+    box-shadow: 2px 5px 15px black;
+}
+form{ 
+    display: grid;
+    grid-template-columns: 1/2;
+    grid-template-rows: 100px 200px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(49, 49, 49);
+    width: 350px;
+    height: 450px;
+    background-color: rgb(251, 247, 247, 0.388); 
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 5px 15px black;
+}
+.login{
+    grid-column: 1/2; 
+    grid-row: 1/2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(10, 10, 10);
+}
+
+.inputForm{
+    grid-column: 1/2; 
+    grid-row: 2/3; 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.userForm{
+    border-bottom: 1px solid rgb(72, 71, 71); 
+    background-color: transparent;
+    padding-bottom: 3px;
+}
+
+#user{
+    background-color: transparent;
+    border: none;
+    outline: none; 
+    font-size: 15px;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+
+#user::placeholder{
+    color: black;
+    font-size: 16px;
+}
+
+.userForm , .passForm{
+    border-bottom: 1px solid rgb(72, 71, 71); 
+    background-color: transparent;
+    padding-bottom: 3px;
+}
+
+#user, #pass{
+    background-color: transparent;
+    border: none;
+    outline: none; 
+    font-size: 15px;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+
+#user::placeholder, #pass::placeholder {
+    color: black; 
+    font-size: 16px;
+}
+
+#forgotText{
+    color: rgb(20, 20, 20); 
+    font-size: 15px;
+}
+
+/* Estilos del botón */
+#loginBtn {
+    background-color: rgb(19, 19, 19); 
+    color: whitesmoke; 
+    font-size: 16px;
+    height: 36px;
+    width: 120px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: -10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center; /* Asegura que el texto esté centrado */
+    padding: 10px 2; /* Aumenta el padding para asegurar que todo el área sea clickeable */
+    z-index: 1; /* Asegura que el botón esté al frente */
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+}
+
+#loginBtn:hover {
+    background-color: rgb(48, 47, 47);
+}
+
+#loginBtn:active {
+    background-color: rgb(30, 30, 30);
+}
+
+
+.inputForm {
+    grid-column: 1/2; 
+    grid-row: 2/3; 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Añadí un pequeño espacio entre los inputs */
+}
+
+
+#signUp{
+    color: white
+}
+
+a{
+    text-decoration: none;
+}
+
+.emailForm{
+    border-bottom: 1px solid rgb(72, 71, 71); 
+    background-color: transparent;
+    padding-bottom: 3px;
+}
+
+#email{
+    background-color: transparent;
+    border: none;
+    outline: none; 
+    font-size: 15px;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+
+#email::placeholder{
+    color: black;
+    font-size: 16px;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -130px;
+  }
+  
+  .social-container a {
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .social-container a:hover {
+    border: 1px solid white;
+  }
+
+.social{
+    color: black;
+    
+}
+
+.footer{ 
+    grid-column: 1/2; 
+    grid-row: 3/4; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+span{
+    text-align: center;
+    margin-top: -20px;
+}
